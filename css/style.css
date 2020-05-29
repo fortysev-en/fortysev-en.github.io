@@ -303,8 +303,7 @@ canvas {
 
 .social{
 	margin-bottom: 25px;
-	margin-top: 20px;
-	padding-right: 16px;
+	margin-top: 15px;
 }
 
 .social a{
@@ -327,9 +326,9 @@ canvas {
 
 .resume span{
 	position: absolute;
-	border: 1px solid #e0e0e0;
+	border: 1px solid #f4f9f4;
 	border-radius: 25px;
-	color: #fff;
+	color: #f4f9f4;
 	padding: 2px 22px 2px;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -339,7 +338,7 @@ canvas {
 }
 
 .resume span:hover{
-	background-color: #fff;
+	background-color: #f4f9f4;
 	color: #000;
 	transition: all ease 0.7s;
 	-webkit-transition: all ease 0.7s;
@@ -348,7 +347,7 @@ canvas {
 
 .home-down {
     color: #f4f9f4;
-    font-size: 40px;
+    font-size: 28px;
     padding-top: 40px;
     padding-left: 20px;
     display: inline-block;
@@ -1449,7 +1448,7 @@ a.site-button{
     }
 
 		.resume span{
-				font-size: 12px;
+				font-size: 10px;
 				padding: 2px 18px 2px;
 		}
 
