@@ -303,6 +303,7 @@ canvas {
 
 .social{
 	margin-bottom: 25px;
+	padding-right: 10px;
 }
 
 .social a{
@@ -327,10 +328,11 @@ canvas {
 	position: absolute;
 	border: 1px solid #e0e0e0;
 	border-radius: 25px;
-	color: #e0e0e0;
+	color: #fff;
 	padding: 2px 22px 2px;
-	font-size: 15px;
-	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 600;
 	box-shadow: 0px 0px 10px #000;
 
 }
@@ -565,7 +567,7 @@ canvas {
 }
 
 .diag .home-content .home-down.bounce{
-    padding: 0 33px 10px;
+    padding: 0 37px 10px;
 		margin-top: 70px;
 }
 
@@ -1444,6 +1446,15 @@ a.site-button{
         margin-bottom: 10px;
 				letter-spacing: 0.2px;
     }
+
+		.resume span{
+				font-size: 12px;
+				padding: 2px 18px 2px;
+		}
+
+		.diag .home-content .home-down.bounce{
+		    padding: 0 28px 10px;
+		}
 
     .contact-info{
         margin-bottom: 30px;
