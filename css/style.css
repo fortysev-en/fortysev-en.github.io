@@ -1287,6 +1287,7 @@ ul.post-comment li p {
     height: 119px;
     margin-bottom: 15px;
     font-family: 'Oswald', sans-serif;
+		color: #000;
 }
 
 .contact-form{
