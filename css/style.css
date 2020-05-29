@@ -69,7 +69,9 @@ footer .social a{
     color: #b1b1b1;
     font-size: 18px;
     margin: 0 10px;
-    transition: all ease 0.3s;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .diag footer p{
@@ -80,7 +82,9 @@ footer .social a{
 
 .footer-text a:hover{
   color: #e0e0e0;
-  transition: 0.5s;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .footer-text a{
@@ -269,7 +273,7 @@ display: table-cell;
    font-weight: bold;
    letter-spacing: -0.8px;
    margin-bottom: 30px;
-	 text-shadow: 1px 1px 20px #000;
+	 text-shadow: 0px 0px 15px #000;
    white-space: nowrap;
 }
 
@@ -297,21 +301,47 @@ canvas {
   vertical-align: bottom;
 }
 
+.social{
+	margin-bottom: 25px;
+}
 
 .social a{
     color: #f4f9f4;
     font-size: 15px;
     margin:0 8px;
-		text-shadow: 1px 1px 20px #000;
-    transition: all ease 0.3s;
+		text-shadow: 0px 0px 15px #000;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 
 .social a:hover{
-    transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
     opacity: 0.5;
 }
 
+.resume span{
+	position: absolute;
+	border: 1px solid #e0e0e0;
+	border-radius: 25px;
+	color: #e0e0e0;
+	padding: 2px 22px 2px;
+	font-size: 15px;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px #000;
+
+}
+
+.resume span:hover{
+	background-color: #fff;
+	color: #000;
+	transition: all ease 0.7s;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
+}
 
 .home-down {
     color: #f4f9f4;
@@ -319,7 +349,9 @@ canvas {
     padding-top: 40px;
     padding-left: 20px;
     display: inline-block;
-    transition: all 0.3s ease;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .home-up {
@@ -329,18 +361,24 @@ canvas {
     padding-left: 20px;
 		padding-bottom: 20px;
     display: inline-block;
-    transition: all 0.3s ease;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 
 .home-down:hover{
-    color: #f4f9f4;
-	transition:all 0.3s ease;
+    color: #b6142c;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .home-up:hover{
     color: #E0E0E0;
-	transition:all 0.3s ease;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .home-down:focus{
@@ -527,7 +565,8 @@ canvas {
 }
 
 .diag .home-content .home-down.bounce{
-    padding: 50px 74px 0;
+    padding: 0 33px 10px;
+		margin-top: 70px;
 }
 
 .diag .contact .home-up.bounce{
@@ -538,31 +577,43 @@ canvas {
 .social-icons a:hover {
     font-size: 15px;
 		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .fb:hover{
     color: #3b5998!important;
-    transition: all ease 0.1s;
+		transition: all ease 0.1s;
+		-webkit-transition: all ease 0.1s;
+		-moz-transition: all ease 0.1s;
 }
 
 .tw:hover{
     color: #55acee!important;
-    transition: all ease 0.1s;
+		transition: all ease 0.1s;
+		-webkit-transition: all ease 0.1s;
+		-moz-transition: all ease 0.1s;
 }
 
 .ins:hover{
     color: #cd486b!important;
-    transition: all ease 0.1s;
+		transition: all ease 0.1s;
+		-webkit-transition: all ease 0.1s;
+		-moz-transition: all ease 0.1s;
 }
 
 .bh:hover{
     color: #1769ff!important;
-    transition: all ease 0.1s;
+		transition: all ease 0.1s;
+		-webkit-transition: all ease 0.1s;
+		-moz-transition: all ease 0.1s;
 }
 
 .dr:hover{
     color: #ea4c89!important;
-    transition: all ease 0.1s;
+		transition: all ease 0.1s;
+		-webkit-transition: all ease 0.1s;
+		-moz-transition: all ease 0.1s;
 }
 
 
@@ -574,7 +625,9 @@ canvas {
     text-align: left;
     min-width: 140px;
     line-height: 17px;
-    transition: all ease 0.3s;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
     color:#E0E0E0;
 }
 
@@ -593,7 +646,9 @@ canvas {
     background: #000;
     color: #E0E0E0;
     border-color: #000;
-    transition: all ease 0.3s;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .sitebtn:hover:after{
@@ -619,7 +674,9 @@ border-bottom: 8px solid rgba(0,0,0,0.1);
 .touch {
 	text-decoration: none;
 	color: #08ffc8;
-	transition: all 0.5s ease;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .touch:hover{
@@ -833,12 +890,16 @@ border-bottom: 8px solid rgba(0,0,0,0.1);
 
 .single_item img{
     width: 100%;
-    transition: all ease 0.3s;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 .single_item img:hover {
   background: #E0E0E0fff;
-  transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
   box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
   top: -5px;
 }
@@ -1324,7 +1385,9 @@ a.site-button{
 .site-button:hover{
     background: #000;
     color: #E0E0E0;
-    transition: all ease 0.3s;
+		transition: all ease 0.3s;
+		-webkit-transition: all ease 0.3s;
+		-moz-transition: all ease 0.3s;
 }
 
 /*------------------------ 6 Responsive ------------------------*/
