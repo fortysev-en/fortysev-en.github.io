@@ -1154,14 +1154,14 @@ opacity: 1;
 
 .blog-info{
     font-weight: 400;
-    color: #b9b9b9;
+    color: #08ffc8;
     margin-top: 20px;
     display: inline-block;
 		font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 .blog-info span{
-    color: #08ffc8;
+    color: #e0e0e0;
 		letter-spacing: 1.1px;
     font-weight: 600;
 }
