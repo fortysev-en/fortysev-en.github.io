@@ -11,8 +11,6 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var firestore = firebase.firestore();
 
-
-
 const submitBtn = document.querySelector("#submit");
 
 let userName = document.querySelector("#userFullName");
@@ -21,24 +19,23 @@ let userMessage = document.querySelector("#userMessage");
 
 const db = firestore.collection("collectData");
 
+
 document.getElementById("submit").addEventListener("click", function(){
   let userNameInput = userName.value;
   let userEmailInput = userEmail.value;
   let userMessageInput = userMessage.value;
 
- //Access Database
- db.doc()
-   .set({
-  name: userNameInput,
-  email: userEmailInput,
-  messege: userMessageInput
- })
- .then(function() {
-  alert("Thank you! I'll get back to you!");
-  $('#contact-form')[0].reset();
-   })
- .catch(function(error) {
-  console.log(error);
-  alert("OOPS! Something went wrong!")
- });
+  if (userNameInput == "") {}
+  else if (userEmailInput == "") {}
+  else if (userMessageInput == "") {}
+  else {
+    db.doc()
+    .set({
+      name: userNameInput,
+      email: userEmailInput,
+      messege: userMessageInput
+      });
+        alert("Thank you! I'll soon get in touch with you.")
+        location.reload();
+  }
 });
