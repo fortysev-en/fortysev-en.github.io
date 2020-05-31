@@ -29,7 +29,7 @@
         <div class="row">
             <div class="container">
                 <div class="logo">
-                    <img src="../images/logo4.png" alt="">
+                    <img src="../images/logo.png" alt="">
                 </div>
                 <div class="responsive"><i data-icon="m" class="icon"></i></div>
                 <ul class="nav-menu">
@@ -145,7 +145,7 @@ with keyboard_listener:
                   <p>Run the script. If you're using terminal/cmd, type <b>python plogger.py</b>, if using any IDE, jusct click on Run. To stop the script, type <b>killall python</b></p>
                   <div class="output">
                     <h2>Output: </h2>
-                    <img src="images/codeblock1.jpg" alt="">
+                    <img src="images/keylogger/codeblock1.jpg" alt="">
                   </div>
 
                   <div id="global-variable">
@@ -188,7 +188,7 @@ with keyboard_listener:
 
                   <div class="output">
                     <h2>Output: </h2>
-                    <img src="images/codeblock2.jpg" alt="">
+                    <img src="images/keylogger/codeblock2.jpg" alt="">
                   </div>
 
                   <div id="threading">
@@ -240,7 +240,7 @@ with keyboard_listener:
 
                       <div class="output">
                         <h2>Output: </h2>
-                        <img src="images/codeblock3.jpg" alt="">
+                        <img src="images/keylogger/codeblock3.jpg" alt="">
                       </div>
 
                       <div id="oop">
@@ -311,7 +311,7 @@ my_keylogger.start()
 </code> </pre>
                     <div class="output">
                       <h2>Output: </h2>
-                      <img src="images/codeblock4.jpg" alt="">
+                      <img src="images/keylogger/codeblock4.jpg" alt="">
                     </div>
 
                     <div class="constructor">
@@ -362,7 +362,7 @@ class Keylogger:
                       <p>As we're just polishing the code, the output will be the same as before.</p>
 
 <div class="output">
-  <img src="images/codeblock5.jpg" alt="">
+  <img src="images/keylogger/codeblock5.jpg" alt="">
 </div>
 
                       <p style="margin-top:20px;">Until now, in our report() method, we were printing the log, but instead of printing it, we want the log to be sent to our email address, for that we're going to define another method called as <b>send_mail()</b> </p>
@@ -559,7 +559,7 @@ pip install pyinstaller
                       </code> </pre>
 
                       <div class="output">
-                        <img src="images/pyinstaller.jpg" alt="">
+                        <img src="images/keylogger/pyinstaller.jpg" alt="">
                       </div>
 
                       <p style="margin-top: 20px;">Once the <b>pyinstaller</b> is installed, make sure you keep your PDF file in <b>data_files</b> folder within the same project directory. </p>
@@ -569,7 +569,7 @@ pip install pyinstaller
 pyinstaller --onefile --noconsole --add-data="C:\Users\forty\PycharmProjects\Blogger\data_files\sample.pdf;data_files" --icon "C:\Users\forty\PycharmProjects\Blogger\data_files\online.ico" blogger.py
                       </code> </pre>
                       <div class="output">
-                        <img src="images/completed.jpg" alt="">
+                        <img src="images/keylogger/completed.jpg" alt="">
                       </div>
                       <p style="margin-top: 20px;">Just navigate to <b>dist</b> folder and you should have a Windows executable which is our final Keylogger.</p>
                     </div>
@@ -581,7 +581,7 @@ pyinstaller --onefile --noconsole --add-data="C:\Users\forty\PycharmProjects\Blo
                       <p>We'll be using the a tool called as <b>Character Map</b> from Windows. It is pre-installed and is available by default.</p><br>
                       <p>Once you open the tool, below right corner you'll see <b>'Go to Unicode'</b>, type <b>202E</b> and press enter and then click on the first character, select it and press copy.</p><br>
                       <div class="output">
-                        <img src="images/charactermap.jpg" alt="">
+                        <img src="images/keylogger/charactermap.jpg" alt="">
                       </div>
 
                       <p style="margin-top: 20px">The character which we have selected, it reverses the characters order from right to left. So if we write fdp it will be changed to pdf.</p><br>
@@ -590,16 +590,16 @@ pyinstaller --onefile --noconsole --add-data="C:\Users\forty\PycharmProjects\Blo
                       <p>That's it, now just copy it and rename our Keylogger and you're done.</p><br>
                       <p>Your .exe has now became a .pdf</p>
                       <div class="output">
-                        <img src="images/extension.jpg" alt="">
+                        <img src="images/keylogger/extension.jpg" alt="">
                       </div>
                       <p style="margin-top: 20px;">You just have to send this file to anyone and once they double click it, our attached PDF will open and the Keylogger will start in the backgound without any notification and also it will add a copy of itself to the appdata/roaming location with a different name and will add a key to registry so that it can auto-start after system reboot.</p>
                     </div>
 
                     <div class="output">
-                      <img src="images/emails.jpg" alt="">
+                      <img src="images/keylogger/emails.jpg" alt="">
                     </div>
                     <div class="output">
-                      <img src="images/registry.jpg" alt="">
+                      <img src="images/keylogger/registry.jpg" alt="">
                     </div>
 
                     <p style="margin-top: 20px;"> Above are the emails received from our Keylogger along with the keystrokes and below that you can see that a key has been registered in Windows registry.</p><br>
