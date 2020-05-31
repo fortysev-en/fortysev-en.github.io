@@ -1132,7 +1132,18 @@ opacity: 1;
     margin-bottom:60px;
 }
 
-.blog-content p, h2{
+.blog-content-blogs{
+    margin-bottom:60px;
+}
+
+.blog-content-home p, h2{
+	font-size: 21px;
+	color: #748182;
+	line-height: 28px;
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.blog-content-blogs p, h2{
 	font-size: 21px;
 	color: #748182;
 	line-height: 28px;
