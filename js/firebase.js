@@ -35,7 +35,6 @@ document.getElementById("submit").addEventListener("click", function(){
       email: userEmailInput,
       messege: userMessageInput
       });
-        alert("Thank you! I'll soon get in touch with you.")
-        location.reload();
+        alert("Thank you! I'll soon get in touch with you.");
   }
 });

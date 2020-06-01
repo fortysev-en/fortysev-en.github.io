@@ -2,11 +2,11 @@ body{
 	font-family: 'Oswald', sans-serif;
 	background: #121212;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 }
 
 html{
 	height: 100%;
+	scroll-behavior: auto;
 }
 
 nav{
