@@ -19,6 +19,11 @@ let userMessage = document.querySelector("#userMessage");
 
 const db = firestore.collection("collectData");
 
+function reset_form()
+{
+  var fm=document.getElementById('contact-form');
+  fm.reset();
+}
 
 document.getElementById("submit").addEventListener("click", function(){
   let userNameInput = userName.value;
@@ -35,6 +40,7 @@ document.getElementById("submit").addEventListener("click", function(){
       email: userEmailInput,
       messege: userMessageInput
       });
-        alert("Thank you! I'll soon get in touch with you.");
+        alert("Thank you for showing your interest! I'll soon get in touch with you.");
+        setTimeout("reset_form()",1000);
   }
 });
