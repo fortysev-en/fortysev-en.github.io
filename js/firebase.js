@@ -40,7 +40,7 @@ document.getElementById("submit").addEventListener("click", function(){
       email: userEmailInput,
       messege: userMessageInput
       });
-        alert("Thank you for showing your interest! I'll soon get in touch with you.");
+        alert("Thank you for showing your interest! I'll soon get in touch with you within next 48 hours. Cheers!!");
         setTimeout("reset_form()",1000);
   }
 });
