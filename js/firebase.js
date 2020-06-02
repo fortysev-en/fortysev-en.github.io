@@ -19,6 +19,8 @@ let userMessage = document.querySelector("#userMessage");
 
 const db = firestore.collection("collectData");
 
+
+//to reset the form after sending
 function reset_form()
 {
   var fm=document.getElementById('contact-form');
@@ -30,6 +32,12 @@ document.getElementById("submit").addEventListener("click", function(){
   let userEmailInput = userEmail.value;
   let userMessageInput = userMessage.value;
 
+  //get current date and time to log into the database
+  var today = new Date();
+  var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+
   if (userNameInput == "") {}
   else if (userEmailInput == "") {}
   else if (userMessageInput == "") {}
@@ -38,7 +46,8 @@ document.getElementById("submit").addEventListener("click", function(){
     .set({
       name: userNameInput,
       email: userEmailInput,
-      messege: userMessageInput
+      messege: userMessageInput,
+      time: dateTime
       });
         alert("Thank you for showing your interest! I'll soon get in touch with you within next 48 hours. Cheers!!");
         setTimeout("reset_form()",1000);
