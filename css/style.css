@@ -1146,6 +1146,7 @@ opacity: 1;
 
 .video-responsive iframe{
 	width: 100%;
+	margin-top: 20px;
 }
 
 .blog-title{
