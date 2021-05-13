@@ -143,6 +143,7 @@ footer .social a {
 }
 
 input:-webkit-autofill {
+	box-shadow: 0 0 0px 1000px white inset;
 	-webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
@@ -326,7 +327,6 @@ input:-webkit-autofill {
 
 canvas {
 	display: block;
-	vertical-align: bottom;
 }
 
 .social {
@@ -973,7 +973,7 @@ canvas {
 }
 
 .single_item img:hover {
-	background: #E0E0E0fff;
+	background: #E0E0E0;
 	transition: all ease 0.3s;
 	-webkit-transition: all ease 0.3s;
 	-moz-transition: all ease 0.3s;
