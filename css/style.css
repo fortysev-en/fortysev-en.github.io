@@ -121,7 +121,7 @@ footer .social a {
 	font-size: 16px;
 }
 
-.footer-text #visit-counter{
+.footer-text .visit-counter{
 	cursor: pointer;
 	font-size: 13px !important;
 }
@@ -1674,4 +1674,52 @@ a.site-button {
     border-radius: 4px;
 	height: 80px;
 	background-color:#F5F5F5;
+}
+
+/*------------------------ 8 Contact Page ------------------------*/
+
+.about-fortyseven{
+	text-align: justify;
+}
+
+.about-fortyseven h2 {
+	color: #f4f9f4;
+}
+
+.about-fortyseven em{
+	color: #b6142c;
+	text-shadow: 0px 0px 15px #000;
+
+}
+
+.about-fortyseven blockquote {
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	border-left: 4px solid #fff;
+	padding-left: 20px;
+	margin: 40px 0;
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.about-para p{
+	margin-top: 15px;
+}
+
+.about-purpose{
+	margin-top: 30px;
+}
+
+.bq-disclaimer h2{
+	font-size: 18px;
+	color: #b6142c;
+	font-weight: 700;
+	text-shadow: 0px 0px 15px #000;
+}
+
+.bq-disclaimer{
+	margin-top: 30px;
+	border-right: 4px solid #b6142c;
+	padding-right: 20px;
+
 }

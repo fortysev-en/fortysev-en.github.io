@@ -470,16 +470,17 @@
             <center>
                 <div class="footer-text">
                     <a href="#">fortyseven</a><br>
-                    <a id="visit-counter" data-toggle="tooltip" data-placement="right" title="Total Visits"></a>
+                    <a id="counter-portfolio" class="visit-counter" data-toggle="tooltip" data-placement="right" title="Total Visits"></a>
                 </div>
+                <script>$(document).ready( function () {updatePortfolioCount();});</script>
             </center>
         </div>
     </footer>
 
     <!-- Javascripts -->
+    <script src="js/counter.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
-    <script src="js/counter.js"></script>
     <script src="js/firebase.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/canvas.js"></script>
