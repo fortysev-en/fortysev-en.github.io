@@ -82,8 +82,12 @@ footer .social a {
 }
 
 .footer-payment-options p, i, a{
+	cursor: pointer;
     color: #b1b1b1;
 	text-decoration: none;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .footer-payment-options p{
@@ -103,22 +107,20 @@ footer .social a {
 
 .footer-payment-options .ethereum a:hover{
     color: #fff;
-	transition: all ease 0.5s;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
 }
 
 .footer-text a:hover {
 	color: #e0e0e0;
-	transition: all ease 0.5s;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
+
 }
 
 .footer-text a {
 	color: #333;
 	text-decoration: none;
 	font-size: 16px;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .footer-text .visit-counter{
@@ -131,14 +133,14 @@ footer .social a {
 }
 
 .nav-menu li a:hover {
-	color: #e0e0e0;
-	transition: all ease 0.5s;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
+	opacity: 0.5 !important;
 }
 
 .nav-menu li a {
 	color: #e0e0e0;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .ok {
@@ -1128,6 +1130,7 @@ canvas {
 .download .fa-download:hover {
 	color: #28a745;
 	opacity: 1;
+	transition: 0.4s ease 0s;
 	-webkit-transition: 0.4s ease 0s;
 	-moz-transition: 0.4s ease 0s;
 	-o-transition: 0.4s ease 0s;
@@ -1137,6 +1140,7 @@ canvas {
 .download .fa-file-powerpoint-o:hover {
 	color: #d04423;
 	opacity: 1;
+	transition: 0.4s ease 0s;
 	-webkit-transition: 0.4s ease 0s;
 	-moz-transition: 0.4s ease 0s;
 	-o-transition: 0.4s ease 0s;
@@ -1146,6 +1150,7 @@ canvas {
 .download .fa-github:hover {
 	color: #7dbbe6;
 	opacity: 1;
+	transition: 0.4s ease 0s;
 	-webkit-transition: 0.4s ease 0s;
 	-moz-transition: 0.4s ease 0s;
 	-o-transition: 0.4s ease 0s;
@@ -1155,6 +1160,7 @@ canvas {
 .social-share .fa-facebook:hover {
 	color: #3b5998;
 	opacity: 1;
+	transition: 0.4s ease 0s;
 	-webkit-transition: 0.4s ease 0s;
 	-moz-transition: 0.4s ease 0s;
 	-o-transition: 0.4s ease 0s;
@@ -1164,6 +1170,7 @@ canvas {
 .social-share .fa-twitter:hover {
 	color: #00acee;
 	opacity: 1;
+	transition: 0.4s ease 0s;
 	-webkit-transition: 0.4s ease 0s;
 	-moz-transition: 0.4s ease 0s;
 	-o-transition: 0.4s ease 0s;
@@ -1183,56 +1190,83 @@ canvas {
 	margin-top: 30px;
 }
 
-.output img {
+/* .output img {
 	width: 100%;
 	height: 100%;
-}
+	border-radius: 10px;
+} */
 
 .inblog-image {
-	opacity: 0.8;
+	opacity: 0.7;
+	padding: 25px;
 	display: block;
 	width: 100%;
 	height: auto;
-	transition: 0.4s ease;
+	transition: all 0.3s ease;
 	backface-visibility: hidden;
+	border-radius: 10px;
 }
 .output:hover .inblog-image {
 	opacity: 1;
+	box-shadow: 0px 0px 25px #000;
 }
 
 .blog-image img {
 	width: 100%;
 	min-height: 207px;
+	opacity: 0.9;
 }
 
 .blog-row {
 	margin: 0;
 }
 
-.blog-row a:hover{
-	opacity: 0.8;
-	transition: all ease 0.5s;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-}
+/* .blog-row a:hover{
+	opacity: 0.5;
+	transition: ease-out 0.5s;
+	-webkit-transition: ease-out 0.5s;
+	-moz-transition: ease-out 0.5s;
+
+} */
 
 .blog-content {
 	margin-bottom: 60px;
+	text-align: justify;
+
 }
 
-.blog-content-blogs {
+.blog-content-hovereffect:hover{
+	/* opacity: 0.7; */
+	box-shadow: 0px 0px 50px #000;
+}
+
+.blog-content-hovereffect{
+	padding: 15px;
+	border-radius: 10px;
+	transition: box-shadow 0.3s ease;
+	-webkit-transition:  box-shadow 0.3s ease;
+	-moz-transition:  box-shadow 0.3s ease;
+	-o-transition:  box-shadow 0.3s ease;
+	-ms-transition:  box-shadow 0.3s ease;
+}
+
+.blog-content-hovereffect h2{
+	margin-top: 0px !important;
+}
+
+/* .blog-content-blogs {
 	margin-bottom: 60px;
-}
+} */
 
-.blog-content-home p,
+/* .blog-content-hover p,
 h2 {
 	font-size: 21px;
 	color: #748182;
 	line-height: 28px;
 	font-family: "Fira Sans Extra Condensed", sans-serif;
-}
+} */
 
-.blog-content-blogs p,
+.blog-content-hover p,
 h2 {
 	font-size: 21px;
 	color: #748182;
