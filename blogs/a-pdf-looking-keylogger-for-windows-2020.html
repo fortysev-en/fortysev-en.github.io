@@ -2,125 +2,152 @@
 <html lang="en">
 
 <head>
-<title>A Windows Keylogger</title>
-<meta charset="UTF-8">
-<meta name="keywords" content="personal, blog, education">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+  <title>A Windows Keylogger</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="personal, blog, education">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="../css/bootstrap.css"/>
-<link rel="stylesheet" href="../css/reset.css"/>
-<link rel="stylesheet" href="../css/style.css"/>
-<link rel="stylesheet" href="../css/animate.css"/>
-<link rel="stylesheet" href="../css/magnific-popup.css"/>
-<link rel="stylesheet" href="../css/prism.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
+  <link rel="stylesheet" href="../css/prism.css">
 
-<!-- Google Web fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <!-- Google Web fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Oswald:wght@300&display=swap"
+    rel="stylesheet">
 
-<!-- Font icons -->
-<link rel="stylesheet" href="../icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="../icon-fonts/essential-regular-fonts/essential-icons.css"/>
+  <!-- Font icons -->
+  <link rel="stylesheet" href="../icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../icon-fonts/essential-regular-fonts/essential-icons.css" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
 <body class="diag" id="diag">
-    <nav class="subpage-nav">
-        <div class="row">
-            <div class="container">
-                <div class="logo">
-                    <img src="../images/logo.png" alt="">
-                </div>
-                <div class="responsive"><i data-icon="m" class="icon"></i></div>
-                <ul class="nav-menu">
-                    <li><a href="../index.html#home">Home</a></li>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li><a href="../index.html#portfolio">Skills</a></li>
-                    <li><a href="../index.html#blog">Blogs</a></li>
-                    <li><a href="../index.html#contact">Contact</a></li>
-                </ul>
-            </div>
+  <nav class="subpage-nav">
+    <div class="row">
+      <div class="container">
+        <div class="logo">
+          <img src="../images/logo.png" alt="">
         </div>
-    </nav>
+        <div class="responsive"><i data-icon="m" class="icon"></i></div>
+        <ul class="nav-menu">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#portfolio">Skills</a></li>
+          <li><a href="../index.html#blog">Blogs</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div class="container content">
-        <div class="row">
-          <div class="col-md-1"></div>
-            <div class="blog-single col-md-10">
-                <div class="blog-image">
-                    <img src="../images/blog-big.jpg" alt="">
-                </div>
-                <h1>Create your own email sending Keylogger for Windows with Python.</h1>
-                <div class="blog-detail">Posted <span>25 May 2020</span> by Pushkar Jadhao</div>
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="blog-single col-md-10">
+        <div class="blog-image">
+          <img src="../images/blog-big.jpg" alt="">
+        </div>
+        <h1>Create your own email sending Keylogger for Windows with Python.</h1>
+        <div class="blog-detail">Posted <span>25 May 2020</span> by Pushkar Jadhao</div>
 
-                <div class="blog-content">
-                  <div id="intro">
-                    <h2>Introduction: </h2>
-                    <p style="color:#fff;">A Keylogger is a type of software, a spyware that performs the action of recording the keys typed on a keyboard and sends the log to a remote destination, so that person using the keyboard is unaware that their actions are being monitored.</p>
-                  </div>
+        <div class="blog-content">
+          <div id="intro">
+            <h2>Introduction: </h2>
+            <p style="color:#fff;">A Keylogger is a type of software, a spyware that performs the action of recording
+              the keys typed on a keyboard and sends the log to a remote destination, so that person using the keyboard
+              is unaware that their actions are being monitored.</p>
+          </div>
 
-                  <div id="working">
-                    <h2>Therotical Working: </h2>
-                    <p>The Keylogger will log each typed keystroke and will send the entire log any email address after every specific period of time. We'll be defining the email adderss and the time interval during programming phase. The program will autostart after system boot-up without any notification and will continue sending logs through emails.</p><br>
-                    <p>With a keylogger, you can record everything the user enters with their keyboard, it can be usernames, passwords, emails, chat messages and many more. I’ll be sharing the source code as well. It is because you can practice on your own and work around it.</p><br>
-                    <p>Here’s how the Keylogger is going to work --- We’ll be creating a python script to which we’ll be converting it into a Windows executable (.exe) and will bind any random PDF so that it looks like a normal PDF and doesn't look suspicious.</p>
-                  </div>
+          <div id="working">
+            <h2>Therotical Working: </h2>
+            <p>The Keylogger will log each typed keystroke and will send the entire log any email address after every
+              specific period of time. We'll be defining the email adderss and the time interval during programming
+              phase. The program will autostart after system boot-up without any notification and will continue sending
+              logs through emails.</p><br>
+            <p>With a keylogger, you can record everything the user enters with their keyboard, it can be usernames,
+              passwords, emails, chat messages and many more. I’ll be sharing the source code as well. It is because you
+              can practice on your own and work around it.</p><br>
+            <p>Here’s how the Keylogger is going to work --- We’ll be creating a python script to which we’ll be
+              converting it into a Windows executable (.exe) and will bind any random PDF so that it looks like a normal
+              PDF and doesn't look suspicious.</p>
+          </div>
 
-                  <div id="requirements">
-                    <h2>Requirements: </h2>
-                    <p>Windows OS</p>
-                    <p>Python 2.7</p>
-                  </div>
+          <div id="requirements">
+            <h2>Requirements: </h2>
+            <p>Windows OS</p>
+            <p>Python 2.7</p>
+          </div>
 
-                  <div id="program-in-action">
-                    <h2>Program in Action: </h2>
-                    <p>Below is the demo of the final program in action.</p>
-                  </div>
+          <div id="program-in-action">
+            <h2>Program in Action: </h2>
+            <p>Below is the demo of the final program in action.</p>
+          </div>
 
 
-                    <div class="video-responsive">
-                      <iframe height="500" src="https://www.youtube.com/embed/8CrVeTKXLVc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+          <div class="video-responsive">
+            <iframe height="500" src="https://www.youtube.com/embed/8CrVeTKXLVc" frameborder="0"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
 
-                  <blockquote>
-                    Before we go ahead with the development, let me make you aware that I’ll be covering up all the basics required for the program so that you will not only understand how the Keylogger works but also you’ll be versed with the Python language.
-                  </blockquote>
+          <blockquote>
+            Before we go ahead with the development, let me make you aware that I’ll be covering up all the basics
+            required for the program so that you will not only understand how the Keylogger works but also you’ll be
+            versed with the Python language.
+          </blockquote>
 
-                  <div id="scope">
-                    <h2>Scope of Learning: </h2>
-                    <p>By the end of this blog, you’ll learn a bit about;</p><br>
-                    <ul class="list-style">
-                      <li>Global variables</li>
-                      <li>Threading</li>
-                      <li>Recursion</li>
-                      <li>OOP</li>
-                      <li>Constructor methods</li>
-                    </ul>
+          <div id="scope">
+            <h2>Scope of Learning: </h2>
+            <p>By the end of this blog, you’ll learn a bit about;</p><br>
+            <ul class="list-style">
+              <li>Global variables</li>
+              <li>Threading</li>
+              <li>Recursion</li>
+              <li>OOP</li>
+              <li>Constructor methods</li>
+            </ul>
 
-                  </div>
+          </div>
 
-                  <div id="libraries-used">
-                    <h2>Libraries Used: </h2>
-                    <p>Most of the libraries will be installed by default, however, if you don’t have those installed, install it manually</p><br>
-                    <ul class="list-style">
-                      <li><b style="color:#e0e0e0">pynput : </b> This library allows you to control and monitor input devices.</li>
-                      <li><b style="color:#e0e0e0">threading : </b> Allows us to run multiple threads (tasks, function calls) at the same time.</li>
-                      <li><b style="color:#e0e0e0">smtplib : </b> Defines an SMTP client session that can be used to send mails.</li>
-                      <li><b style="color:#e0e0e0">subprocess : </b> Allows you to spawn new processes, connect to their I/O, error pipes, and obtain their return codes.</li>
-                      <li><b style="color:#e0e0e0">os : </b> The module provides functions for interacting with the operating system.</li>
-                      <li><b style="color:#e0e0e0">shutil : </b> Module offers a number of high-level operations on files and collections of files.</li>
-                      <li><b style="color:#e0e0e0">sys : </b> It provides functions and variables which are used to manipulate different parts of the Python Runtime Environment.</li>
-                    </ul>
-                  </div>
+          <div id="libraries-used">
+            <h2>Libraries Used: </h2>
+            <p>Most of the libraries will be installed by default, however, if you don’t have those installed, install
+              it manually</p><br>
+            <ul class="list-style">
+              <li><b style="color:#e0e0e0">pynput : </b> This library allows you to control and monitor input devices.
+              </li>
+              <li><b style="color:#e0e0e0">threading : </b> Allows us to run multiple threads (tasks, function calls) at
+                the same time.</li>
+              <li><b style="color:#e0e0e0">smtplib : </b> Defines an SMTP client session that can be used to send mails.
+              </li>
+              <li><b style="color:#e0e0e0">subprocess : </b> Allows you to spawn new processes, connect to their I/O,
+                error pipes, and obtain their return codes.</li>
+              <li><b style="color:#e0e0e0">os : </b> The module provides functions for interacting with the operating
+                system.</li>
+              <li><b style="color:#e0e0e0">shutil : </b> Module offers a number of high-level operations on files and
+                collections of files.</li>
+              <li><b style="color:#e0e0e0">sys : </b> It provides functions and variables which are used to manipulate
+                different parts of the Python Runtime Environment.</li>
+            </ul>
+          </div>
 
-                  <div id="keylog-printer">
-                    <h2>Simple Keylog Printer: </h2>
-                    <p>Alright, enough with the theory, let’s begin to code.</p>
-                    <p>Just fire up your favourite editor and create a new project and a python file within it. I’ll be using PyCharm.</p>
-                    <p>I’ve named my file as <b>pylogger.py</b></p>
-                  </div>
+          <div id="keylog-printer">
+            <h2>Simple Keylog Printer: </h2>
+            <p>Alright, enough with the theory, let’s begin to code.</p>
+            <p>Just fire up your favourite editor and create a new project and a python file within it. I’ll be using
+              PyCharm.</p>
+            <p>I’ve named my file as <b>pylogger.py</b></p>
+          </div>
 
-                  <pre>
+          <pre>
                   <code class="language-py">
 # codeblock 1.0
 
@@ -141,20 +168,25 @@ with keyboard_listener:
 
                   </code>
                   </pre>
-                  <p>Run the script. If you're using terminal/cmd, type <b>python plogger.py</b>, if using any IDE, jusct click on Run. To stop the script, type <b>killall python</b></p>
-                  <div class="output">
-                    <h2>Output: </h2>
-                    <img src="images/keylogger/codeblock1.jpg" alt="">
-                  </div>
+          <p>Run the script. If you're using terminal/cmd, type <b>python plogger.py</b>, if using any IDE, jusct click
+            on Run. To stop the script, type <b>killall python</b></p>
+          <div class="output">
+            <h2>Output: </h2>
+            <img src="images/keylogger/codeblock1.jpg" alt="">
+          </div>
 
-                  <div id="global-variable">
-                    <h2>Global variable: </h2>
-                    <p>A global variable is accessable from any fucntion. It is declared outside of the function or in global scope. In our program instead of sending each typed character to our email, we’ll use a global variable <b>log</b>,
-                      where we’ll store those typed keys and send it to the specified email address after every defined period of time.</p><br>
-                      <p>Also, if you see, there's an additional 'u' printed before every character. To remove this, we'll be declaring the key as a character.</p>
-                  </div>
+          <div id="global-variable">
+            <h2>Global variable: </h2>
+            <p>A global variable is accessable from any fucntion. It is declared outside of the function or in global
+              scope. In our program instead of sending each typed character to our email, we’ll use a global variable
+              <b>log</b>,
+              where we’ll store those typed keys and send it to the specified email address after every defined period
+              of time.</p><br>
+            <p>Also, if you see, there's an additional 'u' printed before every character. To remove this, we'll be
+              declaring the key as a character.</p>
+          </div>
 
-                  <pre><code class="language-py">
+          <pre><code class="language-py">
 # codeblock 2
 
 #!/usr/bin/env python
@@ -185,16 +217,21 @@ with keyboard_listener:
 
                   </code></pre>
 
-                  <div class="output">
-                    <h2>Output: </h2>
-                    <img src="images/keylogger/codeblock2.jpg" alt="">
-                  </div>
+          <div class="output">
+            <h2>Output: </h2>
+            <img src="images/keylogger/codeblock2.jpg" alt="">
+          </div>
 
-                  <div id="threading">
-                      <h2>Threading and Recursion: </h2>
-                      <p>Now we need to send the logged keys after every speicified period of time. We’ll be using another function <b>report()</b>, however, if we call this function with the main program and expect it to send the log after certain period of time, it will either never be executed or the execution will stuck forever in a loop.</p><br>
-                      <p>Hence we need to use threading. The main program will continuously log the keys without inturuptions and the <b>report()</b> function will be executed seperately on a new thread after every specific period of time.</p>
-                      <pre> <code class="language-py">
+          <div id="threading">
+            <h2>Threading and Recursion: </h2>
+            <p>Now we need to send the logged keys after every speicified period of time. We’ll be using another
+              function <b>report()</b>, however, if we call this function with the main program and expect it to send
+              the log after certain period of time, it will either never be executed or the execution will stuck forever
+              in a loop.</p><br>
+            <p>Hence we need to use threading. The main program will continuously log the keys without inturuptions and
+              the <b>report()</b> function will be executed seperately on a new thread after every specific period of
+              time.</p>
+            <pre> <code class="language-py">
 # codebloack 3
 
 #!/usr/bin/env python
@@ -237,17 +274,21 @@ with keyboard_listener:
 
                       </code></pre>
 
-                      <div class="output">
-                        <h2>Output: </h2>
-                        <img src="images/keylogger/codeblock3.jpg" alt="">
-                      </div>
+            <div class="output">
+              <h2>Output: </h2>
+              <img src="images/keylogger/codeblock3.jpg" alt="">
+            </div>
 
-                      <div id="oop">
-                        <h2>Object Oriented Programming: </h2>
-                        <p>Now that we have a Keylogger working perfectly, we just need to send the logs through emails.</p><br>
-                        <p>Similar to the log that we’ve defined as a global variable, we’ll also have to define the username and the password as a global variable so that we can access the contents in other functions. Basically we’re hard coding those data into the program, however, this is not a good practice and hence the OOP needs to be implemented.</p><br>
-                        <p>We’ll be using OOP in order to eliminate the usage of global variables and also we'll use classes. These classes allow us to use OOP where functions can be used as objects.</p><br>
-<pre> <code class="language-py">
+            <div id="oop">
+              <h2>Object Oriented Programming: </h2>
+              <p>Now that we have a Keylogger working perfectly, we just need to send the logs through emails.</p><br>
+              <p>Similar to the log that we’ve defined as a global variable, we’ll also have to define the username and
+                the password as a global variable so that we can access the contents in other functions. Basically we’re
+                hard coding those data into the program, however, this is not a good practice and hence the OOP needs to
+                be implemented.</p><br>
+              <p>We’ll be using OOP in order to eliminate the usage of global variables and also we'll use classes.
+                These classes allow us to use OOP where functions can be used as objects.</p><br>
+              <pre> <code class="language-py">
 
 #codeblock 4
 
@@ -290,11 +331,13 @@ class Keylogger:
 
 </code> </pre>
 
-                      <p>If you try to run this program, it will not work as we’ve now created a class and haven’t used it, we now have to create an object to use this class.</p><br>
-                      <p>We’ll create another file called as <b>blogger.py</b> which we'll have to run everytime to execute our program.</p>
-                      </div>
+              <p>If you try to run this program, it will not work as we’ve now created a class and haven’t used it, we
+                now have to create an object to use this class.</p><br>
+              <p>We’ll create another file called as <b>blogger.py</b> which we'll have to run everytime to execute our
+                program.</p>
+            </div>
 
-                      <pre> <code class="language-py">
+            <pre> <code class="language-py">
 #codeblock 4.1
 
 #!/usr/bin/env python
@@ -308,17 +351,20 @@ my_keylogger.start()
 # start the object
 
 </code> </pre>
-                    <div class="output">
-                      <h2>Output: </h2>
-                      <img src="images/keylogger/codeblock4.jpg" alt="">
-                    </div>
+            <div class="output">
+              <h2>Output: </h2>
+              <img src="images/keylogger/codeblock4.jpg" alt="">
+            </div>
 
-                    <div class="constructor">
-                      <h2>Constructor: </h2>
-                      <p>Constructor is a normal method which is executed automatically when a class is created. It is also known as initialization method.</p>
-                      <p>It is a good place to define a variable so that we don’t need to use it everytime in every reuired method. So we’ll just remove global log from each method and define single self.log under the constructor.</p>
+            <div class="constructor">
+              <h2>Constructor: </h2>
+              <p>Constructor is a normal method which is executed automatically when a class is created. It is also
+                known as initialization method.</p>
+              <p>It is a good place to define a variable so that we don’t need to use it everytime in every reuired
+                method. So we’ll just remove global log from each method and define single self.log under the
+                constructor.</p>
 
-                      <pre> <code class="language-py">
+              <pre> <code class="language-py">
 #codeblock 5
 
 #!/usr/bin/env python
@@ -358,14 +404,16 @@ class Keylogger:
             keyboard_listener.join()
 
                       </code> </pre>
-                      <p>As we're just polishing the code, the output will be the same as before.</p>
+              <p>As we're just polishing the code, the output will be the same as before.</p>
 
-<div class="output">
-  <img src="images/keylogger/codeblock5.jpg" alt="">
-</div>
+              <div class="output">
+                <img src="images/keylogger/codeblock5.jpg" alt="">
+              </div>
 
-                      <p style="margin-top:20px;">Until now, in our report() method, we were printing the log, but instead of printing it, we want the log to be sent to our email address, for that we're going to define another method called as <b>send_mail()</b> </p>
-<pre> <code class="language-py">
+              <p style="margin-top:20px;">Until now, in our report() method, we were printing the log, but instead of
+                printing it, we want the log to be sent to our email address, for that we're going to define another
+                method called as <b>send_mail()</b> </p>
+              <pre> <code class="language-py">
 #codeblock 6
 
 #!/usr/bin/env python
@@ -428,7 +476,7 @@ class Keylogger:
 
 </code> </pre>
 
-<pre> <code class="language-py">
+              <pre> <code class="language-py">
 #codeblock 6.1
 
 #!/usr/bin/env python
@@ -442,23 +490,29 @@ my_keylogger.start()
 
 </code> </pre>
 
-                    <p>Once you run this script, you should start receiving emails in your inbox along with the keylogs.</p>
+              <p>Once you run this script, you should start receiving emails in your inbox along with the keylogs.</p>
 
-                    <blockquote>
-                      If you're using Gmail, you might want to switch on 'Less Secure App Access' from your Google account so as to allow our script to login to your account remotely. To do so, go to Manage your Google Account -> Security -> Less secure app access (switch it ON).
-                    </blockquote>
+              <blockquote>
+                If you're using Gmail, you might want to switch on 'Less Secure App Access' from your Google account so
+                as to allow our script to login to your account remotely. To do so, go to Manage your Google Account ->
+                Security -> Less secure app access (switch it ON).
+              </blockquote>
 
-                    <p>Now that our program is working perfectly, we'll now focus on making it auto-start on boot-up and later convert it into a Windows executable and bind a PDF along with it's icon.</p>
+              <p>Now that our program is working perfectly, we'll now focus on making it auto-start on boot-up and later
+                convert it into a Windows executable and bind a PDF along with it's icon.</p>
 
-                    </div>
+            </div>
 
-                    <div class="auto-start">
-                        <h2>Auto-Start on Boot-up: </h2>
-                        <p>The Keylogger will be of no use if it doesn't even start automatically after system reboot. To make it run automatically after booting the system, we'll add a new method called <b>system_boot()</b> </p><br>
-                        <p>Now, to invoke our Keylogger after system boot, we need to add a key to Windows registry. We'll be adding the entry with the help of certain commands which will get executed soon after our user will double click our Keylogger.</p>
-                        <p>This will be our final code!</p>
+            <div class="auto-start">
+              <h2>Auto-Start on Boot-up: </h2>
+              <p>The Keylogger will be of no use if it doesn't even start automatically after system reboot. To make it
+                run automatically after booting the system, we'll add a new method called <b>system_boot()</b> </p><br>
+              <p>Now, to invoke our Keylogger after system boot, we need to add a key to Windows registry. We'll be
+                adding the entry with the help of certain commands which will get executed soon after our user will
+                double click our Keylogger.</p>
+              <p>This will be our final code!</p>
 
-<pre> <code class="language-py">
+              <pre> <code class="language-py">
 #codebloack 7
 
 #!/usr/bin/env python
@@ -533,7 +587,7 @@ class Keylogger:
             keyboard_listener.join()
 </code> </pre>
 
-<pre> <code class="language-py">
+              <pre> <code class="language-py">
 #codeblock 7.1
 
 #!/usr/bin/env python
@@ -546,119 +600,152 @@ my_keylogger = plogger.Keylogger(60, "your_email", "password")
 my_keylogger.start()
 </code> </pre>
 
-                  <p>We're done with the coding part! We'll not be able to run this code at the moment as we've defined the system_boot() method. Once we convert this into an .exe, it will work perfectly. Let's get into that!</p>
-                    </div>
+              <p>We're done with the coding part! We'll not be able to run this code at the moment as we've defined the
+                system_boot() method. Once we convert this into an .exe, it will work perfectly. Let's get into that!
+              </p>
+            </div>
 
-                    <div class="pytoexe">
-                      <h2>Covert Python program (.py) to Windows executable (.exe)</h2>
-                      <p>To convert our python program to Windows executable, we'll be using a module called as <b>pyinstaller</b>.</p>
-                      <p>We'll have to install this module, so just open your terminal/cmd and type below command.</p>
-                      <pre> <code class="language-py">
+            <div class="pytoexe">
+              <h2>Covert Python program (.py) to Windows executable (.exe)</h2>
+              <p>To convert our python program to Windows executable, we'll be using a module called as
+                <b>pyinstaller</b>.</p>
+              <p>We'll have to install this module, so just open your terminal/cmd and type below command.</p>
+              <pre> <code class="language-py">
 pip install pyinstaller
                       </code> </pre>
 
-                      <div class="output">
-                        <img src="images/keylogger/pyinstaller.jpg" alt="">
-                      </div>
+              <div class="output">
+                <img src="images/keylogger/pyinstaller.jpg" alt="">
+              </div>
 
-                      <p style="margin-top: 20px;">Once the <b>pyinstaller</b> is installed, make sure you keep your PDF file in <b>data_files</b> folder within the same project directory. </p>
-                      <p>We'll also need an icon. Just download any PDF icon from Google (with .ico extenstion) and paste it int he same folder.</p>
-                      <p>Once you're done with that, just run the below command and it will generate an .exe file into the <b>dist</b> folder in the same project directoy.</p>
-                      <pre> <code class="language-py">
+              <p style="margin-top: 20px;">Once the <b>pyinstaller</b> is installed, make sure you keep your PDF file in
+                <b>data_files</b> folder within the same project directory. </p>
+              <p>We'll also need an icon. Just download any PDF icon from Google (with .ico extenstion) and paste it int
+                he same folder.</p>
+              <p>Once you're done with that, just run the below command and it will generate an .exe file into the
+                <b>dist</b> folder in the same project directoy.</p>
+              <pre> <code class="language-py">
 pyinstaller --onefile --noconsole --add-data="C:\Users\forty\PycharmProjects\Blogger\data_files\sample.pdf;data_files" --icon "C:\Users\forty\PycharmProjects\Blogger\data_files\online.ico" blogger.py
                       </code> </pre>
-                      <div class="output">
-                        <img src="images/keylogger/completed.jpg" alt="">
-                      </div>
-                      <p style="margin-top: 20px;">Just navigate to <b>dist</b> folder and you should have a Windows executable which is our final Keylogger.</p>
-                    </div>
-
-                    <div id="format-change">
-                      <h2>Change .exe to .pdf</h2>
-                      <p>We now have our functional Keylogger. If we send this to someone, they might get suspicious as they will see that the file looks like a PDF but has an .exe extenstion. Therefore, it's time for us to change the file format.</p><br>
-                      <p>We cannot directly change the format by renaming our Keylogger, that will definitely not work, instead, we'll this trick.</p><br>
-                      <p>We'll be using the a tool called as <b>Character Map</b> from Windows. It is pre-installed and is available by default.</p><br>
-                      <p>Once you open the tool, below right corner you'll see <b>'Go to Unicode'</b>, type <b>202E</b> and press enter and then click on the first character, select it and press copy.</p><br>
-                      <div class="output">
-                        <img src="images/keylogger/charactermap.jpg" alt="">
-                      </div>
-
-                      <p style="margin-top: 20px">The character which we have selected, it reverses the characters order from right to left. So if we write fdp it will be changed to pdf.</p><br>
-                      <p>So now, open a notepad and write, <b>annfdp.exe</b></p>
-                      <p>After <b>ann</b> paste our selected character and you will see that it will become, <b>annexe.pdf</b></p>
-                      <p>That's it, now just copy it and rename our Keylogger and you're done.</p><br>
-                      <p>Your .exe has now became a .pdf</p>
-                      <div class="output">
-                        <img src="images/keylogger/extension.jpg" alt="">
-                      </div>
-                      <p style="margin-top: 20px;">You just have to send this file to anyone and once they double click it, our attached PDF will open and the Keylogger will start in the backgound without any notification and also it will add a copy of itself to the appdata/roaming location with a different name and will add a key to registry so that it can auto-start after system reboot.</p>
-                    </div>
-
-                    <div class="output">
-                      <img src="images/keylogger/emails.jpg" alt="">
-                    </div>
-                    <div class="output">
-                      <img src="images/keylogger/registry.jpg" alt="">
-                    </div>
-
-                    <p style="margin-top: 20px;"> Above are the emails received from our Keylogger along with the keystrokes and below that you can see that a key has been registered in Windows registry.</p><br>
-                    <p>Your Keylogger is now ready. You can send it directly to anyone, or you can bind it to any backdoor, it's your choice.</p><br>
-                    <p>Thank you for sticking around, I know it's a really long post, but I hope you've learnt something out of it.</p>
-
-                  </div>
-
-                  <div class="social-share">
-                  <h4>SHARE</h4>
-                  <a href="https://www.facebook.com/sharer/sharer.php?u=https://fortysev-en.github.io/blogs/a-pdf-looking-keylogger-for-windows-2020.html" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  <a href="https://twitter.com/share?url=https://fortysev-en.github.io/blogs/a-pdf-looking-keylogger-for-windows-2020.html&text=A Windows Keylogger" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  </div>
-
-                  <div class="download">
-                    <h4>DOWNLOADS</h4>
-                    <a href="https://mega.nz/file/SNpV2SJa#zZBhN1cn_GZic8voUk-UEZ3zNYyOPZaC_5GcYzLnTYc" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    <a href="https://mega.nz/file/bMhQTQ4Y#TOfrPYUO2-L-jewOrEi76Q0iDN0oegUFDDDJtKbHqsc" target="_blank"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i></a>
-                    <a href="https://github.com/fortysev-en/pdf-looking-windows-keylogger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                  </div>
-
-                </div>
-
+              <div class="output">
+                <img src="images/keylogger/completed.jpg" alt="">
+              </div>
+              <p style="margin-top: 20px;">Just navigate to <b>dist</b> folder and you should have a Windows executable
+                which is our final Keylogger.</p>
             </div>
 
-            <div class="col-md-1"></div>
+            <div id="format-change">
+              <h2>Change .exe to .pdf</h2>
+              <p>We now have our functional Keylogger. If we send this to someone, they might get suspicious as they
+                will see that the file looks like a PDF but has an .exe extenstion. Therefore, it's time for us to
+                change the file format.</p><br>
+              <p>We cannot directly change the format by renaming our Keylogger, that will definitely not work, instead,
+                we'll this trick.</p><br>
+              <p>We'll be using the a tool called as <b>Character Map</b> from Windows. It is pre-installed and is
+                available by default.</p><br>
+              <p>Once you open the tool, below right corner you'll see <b>'Go to Unicode'</b>, type <b>202E</b> and
+                press enter and then click on the first character, select it and press copy.</p><br>
+              <div class="output">
+                <img src="images/keylogger/charactermap.jpg" alt="">
+              </div>
+
+              <p style="margin-top: 20px">The character which we have selected, it reverses the characters order from
+                right to left. So if we write fdp it will be changed to pdf.</p><br>
+              <p>So now, open a notepad and write, <b>annfdp.exe</b></p>
+              <p>After <b>ann</b> paste our selected character and you will see that it will become, <b>annexe.pdf</b>
+              </p>
+              <p>That's it, now just copy it and rename our Keylogger and you're done.</p><br>
+              <p>Your .exe has now became a .pdf</p>
+              <div class="output">
+                <img src="images/keylogger/extension.jpg" alt="">
+              </div>
+              <p style="margin-top: 20px;">You just have to send this file to anyone and once they double click it, our
+                attached PDF will open and the Keylogger will start in the backgound without any notification and also
+                it will add a copy of itself to the appdata/roaming location with a different name and will add a key to
+                registry so that it can auto-start after system reboot.</p>
+            </div>
+
+            <div class="output">
+              <img src="images/keylogger/emails.jpg" alt="">
+            </div>
+            <div class="output">
+              <img src="images/keylogger/registry.jpg" alt="">
+            </div>
+
+            <p style="margin-top: 20px;"> Above are the emails received from our Keylogger along with the keystrokes and
+              below that you can see that a key has been registered in Windows registry.</p><br>
+            <p>Your Keylogger is now ready. You can send it directly to anyone, or you can bind it to any backdoor, it's
+              your choice.</p><br>
+            <p>Thank you for sticking around, I know it's a really long post, but I hope you've learnt something out of
+              it.</p>
+
+          </div>
+
+          <div class="social-share">
+            <h4>SHARE</h4>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://fortysev-en.github.io/blogs/a-pdf-looking-keylogger-for-windows-2020.html"
+              target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/share?url=https://fortysev-en.github.io/blogs/a-pdf-looking-keylogger-for-windows-2020.html&text=A Windows Keylogger"
+              target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="download">
+            <h4>DOWNLOADS</h4>
+            <a href="https://mega.nz/file/SNpV2SJa#zZBhN1cn_GZic8voUk-UEZ3zNYyOPZaC_5GcYzLnTYc" target="_blank"><i
+                class="fa fa-download" aria-hidden="true"></i></a>
+            <a href="https://mega.nz/file/bMhQTQ4Y#TOfrPYUO2-L-jewOrEi76Q0iDN0oegUFDDDJtKbHqsc" target="_blank"><i
+                class="fa fa-file-powerpoint-o" aria-hidden="true"></i></a>
+            <a href="https://github.com/fortysev-en/pdf-looking-windows-keylogger" target="_blank"><i
+                class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
 
         </div>
 
-        <center>
-        <a class="home-up bounce" href="#diag"><i class="fa fa-angle-up"></i></a> </center>
+      </div>
+
+      <div class="col-md-1"></div>
+
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="social">
-                <a href="https://www.facebook.com/pushkaraj.jadhao">facebook </a>
-                <a href="https://twitter.com/fortysev_en">twitter </a>
-                <a href="https://www.instagram.com/mr__fortyseven/">instagram </a>
-                <a href="https://github.com/fortysev-en">github </a>
-                <a href="https://codepen.io/fortysev-en">codepen</a>
-                <a href="https://www.linkedin.com/in/pushkar-jadhav-511505207">linkedin </a>
-            </div>
-            <p>Copyright © 2020 Pushkar Jadhao, All rights Reserved.</p>
-            <center><div class="footer-text">
-             <a href="../index.html">fortyseven</a>
-           </div></center>
-        </div>
-    </footer>
+    <center>
+      <a class="home-up bounce" href="#diag"><i class="fa fa-angle-up"></i></a>
+    </center>
+  </div>
 
-<!-- Javascripts -->
-<script src="../js/prism.js"></script>
-<script src="../js/jquery-2.1.4.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/wow.min.js"></script>
-<script src="../js/isotope.pkgd.min.js"></script>
-<script src="../js/typed.js"></script>
-<script src="../js/jquery.magnific-popup.min.js"></script>
-<script src="../js/main.js"></script>
+  <footer>
+    <div class="container">
+      <div class="social">
+        <a href="https://www.facebook.com/pushkaraj.jadhao">facebook </a>
+        <a href="https://twitter.com/fortysev_en">twitter </a>
+        <a href="https://www.instagram.com/mr__fortyseven/">instagram </a>
+        <a href="https://github.com/fortysev-en">github </a>
+        <a href="https://codepen.io/fortysev-en">codepen</a>
+        <a href="https://www.linkedin.com/in/pushkar-jadhav-511505207">linkedin </a>
+      </div>
+      <p>Copyright © 2021 Pushkar Jadhao, All rights Reserved.</p>
+      <center>
+        <div class="footer-text">
+          <a href="../index.html">fortyseven</a><br>
+          <a id="counter-keylogger" class="visit-counter" data-toggle="tooltip" data-placement="right"
+            title="Total Visits"></a>
+          <script>$(document).ready(function () { updateKeyloggerCount(); });</script>
+        </div>
+      </center>
+    </div>
+  </footer>
+
+  <!-- Javascripts -->
+  <script src="../js/counter.js"></script>
+  <script src="../js/prism.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/isotope.pkgd.min.js"></script>
+  <script src="../js/typed.js"></script>
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/main.js"></script>
 
 
 </body>
+
 </html>
