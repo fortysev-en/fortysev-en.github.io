@@ -368,14 +368,14 @@ canvas {
 	letter-spacing: 1px;
 	font-weight: 600;
 	box-shadow: 0px 0px 10px #000;
+	transition: all ease 0.7s;
+	-webkit-transition: all ease 0.7s;
+	-moz-transition: all ease 0.7s;
 }
 
 .resume span:hover {
 	background-color: #f4f9f4;
 	color: #000;
-	transition: all ease 0.7s;
-	-webkit-transition: all ease 0.7s;
-	-moz-transition: all ease 0.7s;
 }
 
 .home-down {
@@ -1756,4 +1756,37 @@ a.site-button {
 	border-right: 4px solid #b6142c;
 	padding-right: 20px;
 
+}
+
+/* ---------------------- 9 Complete Blog Page ------------------------ */
+
+.recent-blogs-border{
+	margin: 50px;
+}
+
+.left-border{
+	margin-top: 12px;
+	float: left;
+	border: 1px solid #e0e0e0;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.right-border{
+	margin-top: 12px;
+	float: right;
+	border: 1px solid #e0e0e0;
+}
+
+.car-ousel{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.carousel-cell img{
+	width: 500px;
+	height: 500px;
+	margin-left: 15px;
 }
