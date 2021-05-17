@@ -1563,7 +1563,7 @@ a.site-button {
 @media screen and (max-width: 767px) {
 
 	.heading-text p{	
-		font-size: 60px !important;
+		font-size: 55px !important;
 	}
 
 	#para p {
@@ -1842,7 +1842,7 @@ right: 0;
 }
 
 .heading-text .heading-agent{
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	opacity: 0.6;
 }
 
