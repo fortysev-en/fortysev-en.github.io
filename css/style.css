@@ -1781,25 +1781,33 @@ a.site-button {
 	margin-top: 15px;
 }
 
-.alert-popup{
+.alert-popup-green{
 	display: none;
 }
 
-.alert-popup{
+.alert-popup-green{
 	position: fixed;
 	bottom: 0;
 	right: 0;
 }
 
-/* .subscribe-alert{
+.alert-popup-red{
 	display: none;
 }
 
-.subscribe-alert{
+.alert-popup-red{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-} */
+}
+
+.green-inner-alert-msg{
+	padding-right: 80px;
+}
+
+.red-inner-alert-msg{
+	padding-right: 80px;
+}
 
 .about-suggestions{
 	margin-top: 80px;

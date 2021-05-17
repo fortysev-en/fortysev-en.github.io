@@ -28,22 +28,34 @@ function updateSubscribeEmail() {
 		// Get values
 		var email = getInputVal("email");
 		var resetForm = document.getElementById("subscribe-form");
+		var green_inner_html = document.querySelector(".green-inner-alert-msg");
+		var red_inner_html = document.querySelector(".red-inner-alert-msg");
+		const green_div = document.querySelector(".alert-popup-green");
+		const red_div = document.querySelector(".alert-popup-red");
+		var text;
 
-		if (email == "") {
-		} else {
+		setTimeout(() => { 
+			if (email == "" || email.indexOf("@") == -1 || email.length < 6) {
+			text = "Please enter a valid email address!";
+			red_inner_html.innerHTML = text;
+			red_div.style.display = "block";
+			setTimeout(function () {red_div.style.display = "none";
+			}, 6000);
+			return false;
+			} 
+		else {
 			// Save message
 			saveMessage(email);
 			resetForm.reset();
-			// Show alert
-			document.querySelector(".inner-alert-msg").innerHTML =
-				"You have successfully subscribed! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-			document.querySelector(".alert-popup").style.display = "block";
-
-			// Hide alert after 3 seconds
+			text = "You have successfully subscribed!";
+			green_inner_html.innerHTML = text;
+			green_div.style.display = "block";
 			setTimeout(function () {
-				document.querySelector(".alert-popup").style.display = "none";
-			}, 5000);
-		}
+				green_div.style.display = "none";
+			}, 6000);
+			} 
+		}, 1000);
+		
 	}
 
 	// Function to get get form values
@@ -78,12 +90,12 @@ function updateSuggestions() {
 		resetForm.reset();
 		// Show alert
 		document.querySelector(".inner-alert-msg").innerHTML =
-			"Thank you for your suggestion! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-		document.querySelector(".alert-popup").style.display = "block";
+			"Thank you for your suggestion! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+		document.querySelector(".alert-popup-green").style.display = "block";
 
 		// Hide alert after 3 seconds
 		setTimeout(function () {
-			document.querySelector(".alert-popup").style.display = "none";
+			document.querySelector(".alert-popup-green").style.display = "none";
 		}, 5000);
 	}
 
