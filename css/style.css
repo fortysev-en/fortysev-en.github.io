@@ -1781,12 +1781,25 @@ a.site-button {
 	margin-top: 15px;
 }
 
-.popup-success{
-	width: 500px;
-	position: fixed;
-bottom: 0;
-right: 0;
+.alert-popup{
+	display: none;
 }
+
+.alert-popup{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+/* .subscribe-alert{
+	display: none;
+}
+
+.subscribe-alert{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+} */
 
 .about-suggestions{
 	margin-top: 80px;
@@ -1817,7 +1830,7 @@ right: 0;
 }
 
 .email-input{
-	width: 470px !important;
+	width: 430px !important;
 }
 
 .msg-suggestion{

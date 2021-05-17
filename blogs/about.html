@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>A Browser Password Extractor - Firebase</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="A Browser Password Extractor will send all the saved data from a browser and send it to a remote database such as firebase without letting the user know.">
+    <meta name="keywords" content="personal, blog, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/prism.css">
+
+    <!-- Google Web fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="../icon-fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../icon-fonts/essential-regular-fonts/essential-icons.css" />
+
+    <!-- Fork Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body class="diag" id="diag">
+    <nav class="subpage-nav">
+        <div class="row">
+            <div class="container">
+                <div class="logo">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="responsive"><i data-icon="m" class="icon"></i></div>
+                <ul class="nav-menu">
+                    <li><a href="complete-list-of-blog-page.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Portfolio</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="about-fortyseven col-md-10">
+
+                <blockquote>
+                    Welcome Stranger!
+                </blockquote>
+
+                <div class="about-para">
+                    <h2>You might be wondering <strong><em>What is 'fortyseven'? </em></strong>or <strong><em>Why
+                                'fortyseven'?</em></strong> </h2>
+
+                    <p>Well, I've spent most of my childhood playing a game called 'Hitman' and I was so facinated by
+                        it. The main character was an assasin named 'Agent Fortyseven', hence the
+                        name 'fortyseven'.</p>
+                </div>
+
+                <div class="about-purpose">
+                    <p>On this website, you'll find various blogs and tools related to hacking, mostly with the help of
+                        Python. The main purpose of these blogs are education. You can refer these blogs to understand
+                        how malwares work and how easy it is to create one by yourselves. It will help you understand
+                        the
+                        basics behind it, and eventually, will make you aware of such attacks. It will also help you in
+                        developing a way to protect yourselves from such hacks.</p>
+                </div>
+
+                <div class="bq-disclaimer">
+                    <h2>
+                        The blogs available on this website are meant for EDUCATIONAL PURPOSE ONLY. I've used my own
+                        systems to carry out these tests. I
+                        personally DO NOT support or promote any unethical practices, as said, it is solely meant for
+                        educational purpose. Any misuse of the available content is completely at your own risks.
+                    </h2>
+                </div>
+
+                <div class="border-left">
+                    <div class="about-subscribe">
+                        <p>I usually post new blogs on weekends as that's the time I mostly work on. You'll see a link
+                            where
+                            you could subscribe yourselves witht the help of email and get updates whenever a new blog
+                            is
+                            available.</p>
+
+                        <div class="about-form-subscribe">
+                            <div class="row">
+                                <form class="subscribe-form" id="subscribe-form">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="email-input"
+                                            name="email" id="email" type="text" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><button id="submit"
+                                            onclick="updateSubscribeEmail();" class="sitebtn btn-submit"
+                                            type="submit">Subscribe</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-left">
+                    <div class="about-suggestions">
+                        <p>I'm open for suggestions! --
+                            In case you want to suggest me and/or want me to create a blog on specific attack, feel free
+                            to
+                            contact me or simply fillout the below form. Make sure you describe it in much detail. I'll
+                            surely
+                            work on it.</p>
+
+                        <div class="about-form-suggestions">
+                            <div class="row">
+                                <form class="suggestions-form" id="suggestions-form">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input type="text"
+                                            placeholder="Name" name="sugname" id="sugname">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input type="text"
+                                            placeholder="Email"  name="sugemail" id="sugemail"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="" type="text"
+                                            placeholder="Message"  name="sugmessage" id="sugmessage"></div>
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><button id="submit" onclick="updateSuggestions();"
+                                            class="sitebtn btn-submit" type="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    </div>
+    <div class="alert-boxes">
+        <div class="alert alert-success alert-popup subscribe-alert" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <strong class="inner-alert-msg"></strong>
+        </div>
+    </div>
+    <center>
+        <a class="home-up bounce" href="#diag"><i class="fa fa-angle-up"></i></a>
+    </center>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="https://www.facebook.com/pushkaraj.jadhao">facebook </a>
+                <a href="https://twitter.com/fortysev_en">twitter </a>
+                <a href="https://www.instagram.com/mr__fortyseven/">instagram </a>
+                <a href="https://github.com/fortysev-en">github </a>
+                <a href="https://codepen.io/fortysev-en">codepen</a>
+                <a href="https://www.linkedin.com/in/pushkar-jadhav-511505207">linkedin </a>
+            </div>
+
+            <div id="payment-options" class="footer-payment-options">
+                <p class="btc"><i class="fa fa-btc" aria-hidden="true"></i><a>17FhPFfDExrh3JNWhQJgTesE8NGphJH8ci</a></p>
+                <p class="ethereum"><i class="fa fa-ethereum"
+                        aria-hidden="true"></i><a>0x6e6a5aad65fa35638f5f65dba0fa34d5e13490d0</a></p>
+            </div><br>
+            <p>Copyright © 2021 Pushkar Jadhao, All rights Reserved.</p>
+            <center>
+                <div class="footer-text">
+                    <a href="../index.html">fortyseven</a><br>
+                    <a id="counter-about" class="visit-counter" data-toggle="tooltip" data-placement="right"
+                        title="Total Visits"></a>
+                    <script>$(document).ready(function () { updateAboutCount(); });</script>
+                </div>
+            </center>
+        </div>
+    </footer>
+
+    <!-- Javascripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.4.2/firebase.js"></script>
+    <script src="../js/firebaseConnect.js"></script>
+    <!-- <script src="../js/firebaseSuggestions.js"></script> -->
+    <script src="../js/counter.js"></script>
+    <script src="../js/prism.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/typed.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
