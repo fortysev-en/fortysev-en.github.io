@@ -94,7 +94,7 @@ footer .social a {
 	color: #b6142c;
 }
 
-.footer-payment-options p, i, a{
+.footer-payment-options p, .footer-payment-options i, .footer-payment-options a{
 	cursor: pointer;
     color: #b1b1b1;
 	text-decoration: none;
@@ -1561,6 +1561,11 @@ a.site-button {
 /*max Width 768px */
 
 @media screen and (max-width: 767px) {
+
+	.heading-text p{	
+		font-size: 60px !important;
+	}
+
 	#para p {
 		text-align: justify;
 	}
@@ -1671,13 +1676,12 @@ a.site-button {
 	}
 }
 
-/*min Width 768px */
+/* min Width 768px
 @media screen and (min-width: 768px) {
 	.nav-menu {
 		display: block !important;
 	}
-}
-
+} */
 /*------------------------ 7 Slider & Video Home ------------------------*/
 
 .home-slider {
@@ -1838,14 +1842,14 @@ right: 0;
 }
 
 .heading-text .heading-agent{
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	opacity: 0.6;
 }
 
 .heading-text p{
 	color: #e0e0e0;
 	font-family: 'Libre Barcode 39 Text';	
-	font-size: 1in;
+	font-size: 80px;
 }
 
 .heading-text .heading-span{
