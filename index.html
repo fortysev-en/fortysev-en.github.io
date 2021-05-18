@@ -429,26 +429,40 @@
                     <h5>leave me a message</h5>
                 </div>
 
-                <form class="contact-form top_60" id="contact-form" method="POST" action="">
+                <form class="contact-form top_60" id="contact-form">
                     <div class="row">
                         <!--Name-->
                         <div class="col-md-6">
-                            <input id="userFullName" name="con_name" class="form-inp requie" type="text"
-                                placeholder="Name" required>
+                            <input id="portname" name="portname" class="form-inp" type="text"
+                                placeholder="Name">
                         </div>
                         <!--Email-->
                         <div class="col-md-6">
-                            <input id="userEmail" name="con_email" class="form-inp requie" type="email"
-                                placeholder="Email" required>
+                            <input id="portemail" name="portemail" class="form-inp" type="email"
+                                placeholder="Email">
                         </div>
                         <div class="col-md-12">
                             <!--Message-->
-                            <textarea name="con_message" id="userMessage" class="requie"
-                                placeholder="How can I help you?" rows="8" required></textarea>
-                            <button id="submit" class="sitebtn top_30 pull-right" type="submit">Submit</button>
+                            <textarea name="portmessage" id="portmessage"
+                                placeholder="How can I help you?" rows="8"></textarea>
+                            <button id="submit" class="sitebtn top_30 pull-right" onclick="portfolioContact(event);">Submit</button>
                         </div>
                     </div>
                 </form>
+                <div class="alert-boxes-green">
+                    <div class="alert alert-success alert-popup-green" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <strong class="green-inner-alert-msg"></strong>
+                    </div>
+                </div>
+                <div class="alert-boxes-red">
+                    <div class="alert alert-danger alert-popup-red" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <strong class="red-inner-alert-msg"></strong>
+                    </div>
+                </div>
             </div>
         </div>
         <center>
@@ -477,10 +491,12 @@
     </footer>
 
     <!-- Javascripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.4.2/firebase.js"></script>
+    <script src="../js/firebaseConnect.js"></script>
     <script src="js/counter.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
-    <script src="js/firebase.js"></script>
+    <script src="js/firebase.js"></script> -->
     <script src="js/particles.js"></script>
     <script src="js/canvas.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
