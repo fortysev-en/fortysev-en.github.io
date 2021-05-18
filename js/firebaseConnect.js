@@ -188,7 +188,7 @@ function updateSuggestions(event) {
 	}
 
 	if (suggmessage == "" || suggmessage.length <= 10) {
-		text = "I'll need more information duh! Add some more content.";
+		text = "I'll need more information duh! Please add some more content.";
 		red_inner_html.innerHTML = text;
 		red_div.style.display = "block";
 		setTimeout(function () {

@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>About - fortyseven</title>
+    <title>Contact Me - fortyseven</title>
     <meta charset="UTF-8">
-    <meta name="description" content="You'll find various blogs and tools related to hacking, mostly with the help of Python. The main purpose of these blogs are education.">
+    <meta name="description"
+        content="You can contact me by filling out the below form. I'm always active on this platform and surely respond in no time.">
     <meta name="keywords" content="personal, blog, education">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
@@ -45,8 +46,8 @@
                 <div class="responsive"><i data-icon="m" class="icon"></i></div>
                 <ul class="nav-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="../index.html">Portfolio</a></li>
 
                 </ul>
@@ -59,76 +60,50 @@
             <div class="col-md-1"></div>
             <div class="about-fortyseven col-md-10">
 
-                <blockquote class="bq-root">
-                    <p class="blockquote-head">About</p>
-                </blockquote>
-
-                <div class="about-para">
-                    <h2>You might be wondering <strong><em>What is 'fortyseven'? </em></strong>or <strong><em>Why
-                                'fortyseven'?</em></strong> </h2>
-
-                    <p>Well, I've spent most of my childhood playing a game called 'Hitman' and I was so facinated by
-                        it. The main character was an assasin named 'Agent Fortyseven', hence the
-                        name 'fortyseven'.</p>
+                <div class="bq-root">
+                    <blockquote>
+                        <p class="blockquote-head">Contact Me</p>
+                    </blockquote>
                 </div>
+                <div class="contact-page-details">
+                    <p>Interested in working together? Well, you might be at the right place!</p>
 
-                <div class="about-purpose">
-                    <p>On this website, you'll find various blogs and tools related to hacking, mostly with the help of
-                        Python. The main purpose of these blogs are education. You can refer these blogs to understand
-                        how malwares work and how easy it is to create one by yourselves. It will help you understand
-                        the
-                        basics behind it, and eventually, will make you aware of such attacks. It will also help you in
-                        developing a way to protect yourselves from such hacks.</p>
-                </div>
-
-                <div class="bq-disclaimer">
-                    <h2>
-                        The blogs available on this website are meant for EDUCATIONAL PURPOSE ONLY. I've used my own
-                        systems to carry out these tests. I
-                        personally DO NOT support or promote any unethical practices, as said, it is solely meant for
-                        educational purpose. Any misuse of the available content is completely at your own risks.
-                    </h2>
-                </div>
-
-                <div class="border-left">
-                    <div class="about-subscribe">
-                        <p>I usually post new blogs on weekends as that's the time I mostly work on. I understand that checking a webstite every now and then for any updates is not so convenient. You can simply enter your email address below and subscribe for the updates. Whenever a new post will be available, you'll be notified -- no spams, I promise.</p>
-                        <div class="about-form-subscribe">
-                            <div class="row">
-                                <form class="subscribe-form" id="subscribe-form">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="email-input"
-                                            name="email" id="email" type="text" placeholder="Email">
-                                    </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><button
-                                            onclick="updateSubscribeEmail(event);" class="sitebtn btn-submit sub-icon"
-                                            type="submit">Subscribe</button></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <p>I'm here to answer the questions you may have, feel free to drop me a line. If you don't get an answer immediately, I might just be pulling my hair over some bloody bug, I'll get back to you as soon as I can, and that's a promise.</p>
                 </div>
                 <div class="border-left">
-                    <div class="about-suggestions">
-                        <p>I'm open for suggestions! -- If you've came up with an idea, I can help you develop it. 
-                            In case you want to suggest me or want me to create a blog on a specific type of tool, feel free
-                            to get in touch with me. You can either directly contact me, or you can simply fillout the below form.</p>
+                    <div class="about-suggestions contact-page-form">
+                        <p>You'll just have to fill in the below form and I'll get back to you within 48 hours.</p>
                         <div class="about-form-suggestions">
                             <div class="row">
-                                <form class="suggestions-form" id="suggestions-form">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input type="text"
-                                            placeholder="Name" name="sugname" id="sugname">
+                                <form class="subscribe-form" id="contact-form">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input id="portname" name="portname" type="text"
+                                        placeholder="Name">
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input type="text"
-                                            placeholder="Email" name="sugemail" id="sugemail"></div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input class="" type="text"
-                                            placeholder="Message" name="sugmessage" id="sugmessage"></div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><input id="portemail" name="portemail" type="email"
+                                        placeholder="Email"></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><input name="portmessage" id="portmessage" placeholder="How can I help you?"></div>
                                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><button
-                                            onclick="updateSuggestions(event);" class="sitebtn btn-submit"
+                                            onclick="portfolioContact(event);" class="sitebtn btn-submit"
                                             type="submit">Submit</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row inline-contact">
+
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <p class="inline-email"><i class="fa fa-envelope"
+                                aria-hidden="true"></i>pushkar.jadhao@gmail.com</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <p class="inline-center"><i class="fa fa-map-marker" aria-hidden="true"></i>Vadgaon Sheri -
+                            Pune, IN</p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <p class="inline-number"><i class="fa fa-whatsapp" aria-hidden="true"></i>+91 88055 66621
+                        </p>
                     </div>
                 </div>
             </div>
@@ -149,10 +124,7 @@
                     aria-hidden="true">&times;</span></button>
             <strong class="red-inner-alert-msg"></strong>
         </div>
-    </div>
-    <center>
-        <a class="home-up bounce" href="#diag"><i class="fa fa-angle-up"></i></a>
-    </center>
+    </div>  
     </div>
     <footer>
         <div class="container">
@@ -176,7 +148,7 @@
                     <a href="../index.html">fortyseven</a><br>
                     <a id="counter-about" class="visit-counter" data-toggle="tooltip" data-placement="right"
                         title="Total Visits"></a>
-                    <script>$(document).ready(function () { updateAboutCount(); });</script>
+                    <script>$(document).ready(function () { updateContactCount(); });</script>
                 </div>
             </center>
         </div>

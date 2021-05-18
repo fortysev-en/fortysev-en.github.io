@@ -1742,7 +1742,7 @@ a.site-button {
 
 }
 
-.about-fortyseven blockquote {
+/* .about-fortyseven blockquote {
 	font-size: 20px;
 	line-height: 24px;
 	color: #fff;
@@ -1750,6 +1750,19 @@ a.site-button {
 	padding-left: 20px;
 	margin: 40px 0;
 	font-family: "Fira Sans Extra Condensed", sans-serif;
+} */
+
+.bq-root{
+	font-family: "Fira Sans Extra Condensed", sans-serif;
+	border-left: 4px solid #fff;
+	color: #fff;
+	margin: 40px 0;
+}
+
+.blockquote-head{
+	font-size: 50px !important;
+	color: white !important;
+	padding: 10px;
 }
 
 .about-para p{
@@ -1819,7 +1832,7 @@ a.site-button {
 	border-left: 4px solid white;
 }
 
-.about-suggestions p{
+.about-suggestions p, .about-subscribe p{
 	color: #e0e0e0;
 }
 
@@ -1962,4 +1975,37 @@ a.site-button {
 
 .sub-icon::after{
 	content: "\f0e0" !important;
+}
+
+/* ---------------------- 10 Contact Page ------------------------ */
+.contact-page-details p{
+	font-size: 20px;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.inline-contact{
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.inline-contact i{
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.inline-email{
+	float: left;
+}
+
+.inline-center{
+	text-align: center;
+}
+
+.inline-number{
+	float: right;
+}
+
+.contact-page-form{
+	margin-top: 40px !important;
 }

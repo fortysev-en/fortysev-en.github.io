@@ -26,6 +26,14 @@ function updateAboutCount() {
 	})
 }
 
+function updateContactCount(){
+	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/contactMe/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countAbout.innerHTML = res.value;
+	})
+}
+
 function updateCompleteBlogCount() {
 	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/completeBlog/?amount=1')
 	.then(res => res.json())
