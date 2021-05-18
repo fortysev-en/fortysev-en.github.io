@@ -95,6 +95,7 @@ footer .social a {
 }
 
 .footer-payment-options a{
+	font-size: 18px;
 	cursor: pointer;
     color: #b1b1b1;
 	text-decoration: none;
@@ -1788,7 +1789,7 @@ a.site-button {
 .alert-popup-green{
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 10px;
 }
 
 .alert-popup-red{
@@ -1798,7 +1799,7 @@ a.site-button {
 .alert-popup-red{
 	position: fixed;
 	bottom: 0;
-	right: 0;
+	right: 10px;
 }
 
 .green-inner-alert-msg{
@@ -1948,4 +1949,17 @@ a.site-button {
 	margin-top: 12px;
 	float: right;
 	border-bottom: 2px solid #e0e0e0;
+}
+
+.complete-page-subscribe{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.complete-page-subscribe input{
+	width: 100%;
+}
+
+.sub-icon::after{
+	content: "\f0e0" !important;
 }
