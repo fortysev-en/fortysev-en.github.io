@@ -94,7 +94,7 @@ footer .social a {
 	color: #b6142c;
 }
 
-.footer-payment-options p, .footer-payment-options i, .footer-payment-options a{
+.footer-payment-options a{
 	cursor: pointer;
     color: #b1b1b1;
 	text-decoration: none;
