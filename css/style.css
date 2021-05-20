@@ -3,6 +3,8 @@
 body {
 	font-family: "Oswald", sans-serif;
 	background: #121212;
+	/* rgb(39,39,39) */
+	/* rgb(230,230,230) */
 	overflow-x: hidden;
 }
 
@@ -81,17 +83,17 @@ footer .social a {
 	/* margin-top: 40px; */
 }
 
-.inblog-a a{
+.redirect-bq a{
 	text-decoration: none;
-    color: #e0e0e0;
+    color: #b6142c;
 	text-decoration: none;
 	transition: all ease 0.5s;
 	-webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
 }
 
-.inblog-a a:hover{
-	color: #b6142c;
+.redirect-bq a:hover{
+	color: #e0e0e0;
 }
 
 .footer-payment-options a{
@@ -1225,8 +1227,14 @@ canvas {
 
 .blog-image img {
 	width: 100%;
-	min-height: 207px;
+	min-height: 200px;
 	opacity: 0.9;
+}
+
+.complete-blog-image img {
+    width: 100%;
+    height: 200px;
+    opacity: 0.9;
 }
 
 .blog-row {
@@ -1354,7 +1362,7 @@ h2 {
 
 .blog-single ul.list-style li {
 	list-style: circle;
-	font-size: 21px;
+	font-size: 18px;
 	color: #748182;
 	line-height: 28px;
 	font-family: "Fira Sans Extra Condensed", sans-serif;

@@ -8,7 +8,11 @@ const countPortfolio = document.getElementById('counter-portfolio');
 const countAbout = document.getElementById('counter-about');
 const countCompleteBlog = document.getElementById('counter-completeblog');
 const countKeylogger = document.getElementById('counter-keylogger');
-const countBrowserPasswordExtractor = document.getElementById('count-browser-password')
+const countBrowserPasswordExtractor = document.getElementById('counter-browser-password');
+const countAntiscan = document.getElementById('counter-antiscan');
+const countAwSnap = document.getElementById('counter-awsnap')
+
+
 
 function updatePortfolioCount() {
 	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/portfolio/?amount=1')
@@ -42,6 +46,14 @@ function updateCompleteBlogCount() {
 	})
 }
 
+function updateAwSnapCount() {
+	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/AwSnap/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countAwSnap.innerHTML = res.value;
+	})
+}
+
 //================================ Blogs =============================================
 
 function updateKeyloggerCount() {
@@ -60,6 +72,13 @@ function updateBrowserPasswordExtractor() {
 	})
 }
 
+function updateAntiscan() {
+	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/antiScan/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countAntiscan.innerHTML = res.value;
+	})
+}
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
