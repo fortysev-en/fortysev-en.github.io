@@ -11,6 +11,7 @@ const countKeylogger = document.getElementById('counter-keylogger');
 const countBrowserPasswordExtractor = document.getElementById('counter-browser-password');
 const countAntiscan = document.getElementById('counter-antiscan');
 const countAwSnap = document.getElementById('counter-awsnap')
+const countZipping = document.getElementById('counter-zipping')
 
 
 
@@ -77,6 +78,14 @@ function updateAntiscan() {
 	.then(res => res.json())
 	.then(res => {
 		countAntiscan.innerHTML = res.value;
+	})
+}
+
+function updateZipping() {
+	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/zipping/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countZipping.innerHTML = res.value;
 	})
 }
 
