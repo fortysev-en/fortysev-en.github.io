@@ -7,12 +7,14 @@
 const countPortfolio = document.getElementById('counter-portfolio');
 const countAbout = document.getElementById('counter-about');
 const countCompleteBlog = document.getElementById('counter-completeblog');
+const countDonate = document.getElementById('counter-donate');
+
+
 const countKeylogger = document.getElementById('counter-keylogger');
 const countBrowserPasswordExtractor = document.getElementById('counter-browser-password');
 const countAntiscan = document.getElementById('counter-antiscan');
 const countAwSnap = document.getElementById('counter-awsnap')
 const countZipping = document.getElementById('counter-zipping')
-
 
 
 function updatePortfolioCount() {
@@ -86,6 +88,14 @@ function updateZipping() {
 	.then(res => res.json())
 	.then(res => {
 		countZipping.innerHTML = res.value;
+	})
+}
+
+function updateDonate() {
+	fetch('https://api.countapi.xyz/update/fortysev-en.github.io/donatepage/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countDonate.innerHTML = res.value;
 	})
 }
 

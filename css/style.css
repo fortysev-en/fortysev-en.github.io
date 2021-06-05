@@ -1571,6 +1571,19 @@ a.site-button {
 
 @media screen and (max-width: 767px) {
 
+	.btc-discription span{
+		font-size: 20px !important;
+	}
+
+	.btc-discription p{
+		font-size: 20px !important;
+		margin-bottom: 25px !important;
+	}
+
+	.btc-discription{
+		text-align: center;
+	}
+
 	.heading-text p{	
 		font-size: 55px !important;
 	}
@@ -2016,4 +2029,101 @@ a.site-button {
 
 .contact-page-form{
 	margin-top: 40px !important;
+}
+
+/* ---------------------11 Donate Page--------------------- */
+
+.donation-head{
+	margin-top: 25px;
+}
+
+.donation-head p{
+	color: white;
+}
+
+.donation-head strong{
+	color: orange;
+}
+
+.btc-row{
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-top: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+.btc-qrcode img{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.btc-qrcode{
+	text-align: center;
+}
+
+.btc-discription{
+	float: left;
+}
+
+.btc-discription p{
+	color:white;
+	font-size: 25px;
+	font-weight: 800;
+	padding: 1em;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+
+.btc-discription a{
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	-webkit-transition:  all 0.5s ease;
+	-moz-transition:  all 0.5s ease;
+	-o-transition:  all 0.5s ease;
+	-ms-transition:  all 0.5s ease;
+}
+
+.btc-discription a:hover{
+	color: orange;
+}
+
+#btc-anchor{
+	color: orange;
+}
+
+#btc-add{
+	font-size: 30px;
+	padding: 25px;
+	display: block;
+}
+
+
+#eth-anchor{
+	color: orange;
+}
+
+#eth-add{
+	font-size: 30px;
+	padding: 25px;
+	display: block;
+}
+
+#doge-anchor{
+	color: orange;
+}
+
+#doge-add{
+	font-size: 30px;
+	padding: 25px;
+	display: block;
+}
+
+#paypal-add{
+	font-size: 30px;
+	padding: 25px;
+	display: block;
 }
